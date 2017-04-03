@@ -15,7 +15,7 @@ config.json
 ```
 port will be 8080 if not given.
 
-rootdir can be relative path or absoute path.
+rootdir can be relative path or absolute path.
 
 todo
 -------
