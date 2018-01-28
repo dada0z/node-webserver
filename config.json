@@ -1,4 +1,4 @@
 {
-    "port": "",
-    "rootdir":""
+    "port": "8080",
+    "rootdir":"../angular-demo"
 }
