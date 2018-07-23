@@ -7,7 +7,7 @@ usage
 
 config.json
 ---------------------------
-```
+```json
 {
   "port":"",
   "rootdir":""
@@ -19,7 +19,7 @@ rootdir can be relative path or absolute path.
 
 todo
 -------
-serve for dynamic request
+~~serve for dynamic request~~
 
 thanks
 -----------------

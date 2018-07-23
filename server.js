@@ -1,13 +1,13 @@
-var config = require("./config.json");
-var port = config.port || 8080;
-var rootdir = config.rootdir || "page";
+const config = require("./config.json");
+const port = config.port || 8080;
+const rootdir = config.rootdir || "page";
 
-var http = require('http');
-var url = require('url');
-var fs = require('fs');
-var mime = require('./mime').types;
-var path = require('path');
-var services = require('./services');
+const http = require('http');
+const url = require('url');
+const fs = require('fs');
+const mime = require('./mime').types;
+const path = require('path');
+const services = require('./services');
 
 var onRequest = function(request, response) {
     var pathname = url.parse(request.url).pathname;
@@ -56,7 +56,7 @@ var onRequest = function(request, response) {
         }
     });
 };
-var server = http.createServer(onRequest);
+const server = http.createServer(onRequest);
 server.listen(port);
 console.log("Server runing at port: " + port);
 console.log("root dir : " + path.resolve(rootdir));
